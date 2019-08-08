@@ -1,0 +1,190 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    cursor: default;
+}
+
+#bgImg {
+    background-image: url("../media/BGfull.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    position: relative;
+}
+
+#op {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+}
+
+.title {
+    margin: auto;
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+
+
+    border-radius: 20px;
+    width: 50%;
+    height: 40%;
+
+    position: relative;
+
+    animation-name: titlebg;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.language {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    /* background-color: rgba(0, 0, 0, 0); */
+    position: absolute;
+    display: inline-block;
+    font-size: 18px;
+    top: 70%;
+    animation-delay: 3s;
+    animation-name: forlan;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#where {
+    color: #007CC5;
+    text-shadow: gray 0.05em 0.05em 0.05em;
+    opacity: 0;
+    font-size: 5rem;
+    animation-delay: 1s;
+    animation-name: fadetext;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+#wally {
+    color: #EB1B2F;
+    text-shadow: gray 0.05em 0.05em 0.05em;
+    opacity: 0;
+    font-size: 5rem;
+    animation-delay: 2s;
+    animation-name: fadetext;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+.global {
+    opacity: 0;
+    animation-delay: 4s;
+    animation-name: fadetext;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.language:hover>.en,
+.language:hover>.zh {
+    visibility: visible;
+}
+
+
+span {
+    position: relative;
+    vertical-align: top;
+}
+
+.left,
+.right {
+    position: relative;
+}
+
+.en:hover>.left {
+    animation-name: gotoen;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.zh:hover>.right {
+    animation-name: gotozh;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.zh:hover,
+.en:hover {
+    color: #EB1B2F;
+}
+
+.en {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.zh {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.en,
+.zh {
+    display: inline-block;
+    visibility: hidden;
+    position: static;
+    opacity: 0%;
+}
+
+@keyframes gotozh {
+    from {
+        color: white
+    }
+
+    to {
+        transform: translateX(50px);
+        color: yellow;
+    }
+}
+
+@keyframes gotoen {
+    from {
+        color: white
+    }
+
+    to {
+        transform: translateX(-50px);
+        color: yellow;
+    }
+}
+
+@keyframes titlebg {
+    from {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    to {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+@keyframes forlan {
+    from {
+        left: -100%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@keyframes fadetext {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

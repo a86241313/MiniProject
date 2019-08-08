@@ -1,0 +1,244 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+.forc {
+    pointer-events: none;
+    width: 70vw;
+    height: 93vh;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    cursor: crosshair;
+    /* border: #EB1B2F 1px solid; */
+}
+
+
+.img-glass {
+    cursor: crosshair;
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    pointer-events: none;
+    /* display: none; */
+}
+
+li {
+    font-family: '微軟正黑體', 'Red Hat Display', sans-serif;
+}
+
+#gamepic {
+    width: 70vw;
+    height: 93vh;
+    object-fit: contain;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    /* border: #EB1B2F solid 1px */
+    left: 0;
+    top: 0;
+    cursor: crosshair;
+}
+
+map,
+area {
+    cursor: crosshair;
+}
+
+/* 
+#drawarea {
+    width: 100vw;
+    height: 100vh;
+    border: black 1px solid;
+    position: relative;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    margin: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2; 
+    pointer-events: none;
+} */
+
+/* =============For Timer============= */
+li {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#mins {
+    margin: auto;
+    text-align: center;
+    width: 25vw;
+    height: 15vh;
+    font-size: 5rem;
+    line-height: 5rem;
+    color: #007CC5;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: gray 0.05em 0.05em 0.05em;
+}
+
+#fortimer {
+    height: 91vh;
+    width: 29vw;
+    right: 0;
+    top: 0;
+    position: absolute;
+    border: dashed white 4px;
+    margin: 0%;
+    color: white;
+    background-color: #007CC5;
+    border-radius: 20px;
+    display: flex;
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#mode {
+    display: inline-block;
+    margin: auto;
+    font-family: 'Archivo Black', sans-serif;
+    outline: none;
+    font-size: 40px;
+    letter-spacing: 13px;
+    width: 25vw;
+    height: 12vh;
+    color: #007CC5;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: gray 0.05em 0.05em 0.05em;
+}
+
+#start {
+    font-family: 'Archivo Black', sans-serif;
+    outline: none;
+    font-size: 40px;
+    letter-spacing: 13px;
+    width: 25vw;
+    height: 12vh;
+    color: #007CC5;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: gray 0.05em 0.05em 0.05em;
+}
+
+
+
+
+/* ================NavBar============================= */
+
+i {
+    font-family: 'Material Icons';
+    vertical-align: -25%;
+    color: white;
+    text-align: center;
+    width: 5vw;
+}
+
+span {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.nav {
+    margin: 0%;
+    border: 0;
+    outline: none;
+    position: relative;
+    display: inline-block;
+
+}
+
+#navbar {
+    position: fixed;
+    bottom: 0%;
+    display: block;
+    font-size: 2vw;
+    width: 100vw;
+    text-align: center;
+    background-color: #EB1B2F;
+    z-index: 10;
+    border-top: 0.5px solid black;
+}
+
+.list {
+    text-align: center;
+    display: inline-block;
+    width: 23vw;
+    height: 7vh;
+    margin: 0 -4px 0 -4px;
+    padding: 0;
+}
+
+.home {
+    padding: 0;
+    text-align: center;
+    border-top: 0.5px solid black;
+    display: inline-block;
+    position: relative;
+    width: 8vw;
+    height: 7vh;
+    margin: 0 -4px 0 -4px;
+}
+
+.white {
+    font-size: 2vw;
+    color: #EB1B2F;
+    background-color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    border: 0;
+}
+
+
+.red {
+    font-size: 2vw;
+    color: white;
+    background-color: #EB1B2F;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    border: 0;
+}
+
+.dropup {
+    position: relative;
+    display: inline-block;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    bottom: 7vh;
+    width: 100%;
+    text-align: center;
+}
+
+.jump {
+    margin: 0;
+    height: 30vh;
+    object-fit: contain;
+    vertical-align: bottom;
+
+}
+
+.woof {
+    margin: 0;
+    height: 15vh;
+    object-fit: contain;
+    vertical-align: bottom;
+}
+
+.dropup:hover .content {
+    display: block;
+}

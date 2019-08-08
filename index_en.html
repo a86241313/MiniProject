@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./CssScript/index.css">
+    <link rel="icon" href="./media/icon.jpg" type="image/x-icon" />
+    <!-- for icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- 標題 font-family: 'Archivo Black', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <!-- 英文內文 font-family: 'Red Hat Display', sans-serif;  -->
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:700&display=swap" rel="stylesheet">
+    <!-- 中文內文 font-family: 'M PLUS Rounded 1c', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <!-- for JQ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>《Where's Wally?》</title>
+</head>
+
+<body>
+    <span id="where">WHERE'S</span>
+    <span id="wally">WALLY?</span>
+    <div id="navbar">
+        <span class="red home dropup">
+            <a href="./Home.html">
+                <button class="red nav" id="home"><i class="material-icons"> home </i></button>
+                <div class="content">
+                    <img class="jump" src="./media/Character/Wally.png" alt="">
+                </div>
+            </a>
+        </span>
+        <span class="list white dropup">
+            <button class="white nav" onclick="opentab(event, 'Introduction')">Introduction</button>
+            <div class="content">
+                <img class="jump" src="./media/Character/Wilma.png" alt="">
+            </div>
+        </span>
+        <span class="list red dropup">
+            <button class="red nav" onclick="opentab(event, 'Character')">Character</button>
+            <div class="content">
+                <img class="jump" src="./media/Character/WizardWhitebeard.png" alt="">
+            </div>
+        </span>
+        <span class="list white dropup anecdote" onclick="opentab(event, 'Anecdote')">
+            <button class="white nav">Anecdote</button>
+            <div class="content">
+                <img class="jump" src="./media/Character/Odlaw.png" alt="">
+            </div>
+        </span>
+        <span class="list red dropup">
+            <a href="./game.html">
+                <button class="red nav" id="game">Game</button>
+                <d class="content">
+                    <img class="woof" src="./media/Character/woof.png" alt="">
+            </a>
+
+        </span>
+    </div>
+
+    <!-- ========================================== -->
+    <div class="card tabcontent" id="Introduction">
+        <div></div>
+        <div class="container">
+            <h1><b>《Where's Wally?》</b></h1>
+            <p class="details">《Where's Wally》
+                <br>
+                It is a British series of children's puzzle books created by English illustrator Martin Handford.
+                <br>
+                The books consist of a series of detailed double-page spread illustrations depicting dozens or more
+                people doing a variety of amusing things at a given location.
+                <br>
+                Readers are challenged to find a character named Wally hidden in the group.
+                <br>
+                Wally is identified by his red-and-white-striped shirt, bobble hat, and glasses, but many illustrations
+                contain red herrings involving deceptive use of red-and-white striped objects.
+                <br>
+            </p>
+            <hr>
+            <p class="details"> In 1986, Handford was asked by his art director at Walker Books to draw a character with
+                peculiar
+                features so that his pictures of crowds had a focal point.
+                <br>
+                After much thinking, he came up with the idea of "Wally", a world traveller and time travel aficionado
+                who always dresses in red and white.
+                <br>
+                Sometimes it would take him up to eight weeks to draw a two-page sketch of the elusive "Wally" and the
+                characters surrounding him.
+                <br>
+                The books became extremely popular and were localised for many different territories,
+                <br>
+                with name changes for Wally in certain regions.
+                <br>
+                The franchise also spawned other media in a more storyline-based form,
+                <br>
+                including a television series, a comic strip and a series of video games.
+                <br>
+            </p>
+            <hr>
+            <p class="details">
+                In 1986, Handford was asked by his art director at Walker Books to draw a character with peculiar
+                features so that his pictures of crowds had a focal point.
+                <br>
+                After much thinking, he came up with the idea of "Wally", a world traveller and time travel aficionado
+                who always dresses in red and white.
+                <br>
+                Sometimes it would take him up to eight weeks to draw a two-page sketch of the elusive "Wally" and the
+                characters surrounding him.
+                <br>
+                The books became extremely popular and were localised for many different territories,
+                <br>
+                with name changes for Wally in certain regions.
+                <br>
+                The franchise also spawned other media in a more storyline-based form,
+                <br>
+                including a television series, a comic strip and a series of video games.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="card tabcontent" id="Character">
+        <div class="container" style="display:inline-block">
+            <h1><b>Characters</b></h1>
+            <br>
+            <br>
+            <div>
+                <div class="aaa">
+                    <h2>Wally</h2>
+                    <hr>
+                    <div>
+                        <p class="details">
+                            whose name was localised for certain international editions.
+                            <br>
+                            In the first two books, Wally wandered alone and was the only person to be found in
+                            every illustration.
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cha_pic">
+                    <img class="cha" src="./media/Character/Wally_mini.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="aaa">
+                    <h2>Wilma</h2>
+                    <hr>
+                    <div>
+                        <p class="details">Wally's friend,
+                            <br>
+                            who first appeared in the Ultimate Fun Book,
+                            <br>
+                            and was replaced by her identical twin sister Wenda in the
+                            <br>
+                            《Where's Wally: The Magnificent Poster Book》.
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cha_pic">
+                    <img class="cha" src="./media/Character/Wilma_mini.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="aaa">
+                    <h2>Odlaw</h2>
+                    <hr>
+                    <div>
+                        <p class="details">Wally's nemesis,
+                            <br>
+                            who made his print debut in《 The Magnificent Poster Book》.
+                            <br>
+                            He appears nearly the same as Wally,
+                            <br>
+                            except that his clothes are yellow and black striped instead of red and white;
+                            <br>
+                            his glasses have a blue tint to them; and he has a moustache.
+                            <br>
+                            He also has a British accent in the television series.
+                            <br>
+                            His name "Odlaw" is simply a reversal of the spelling of "Waldo",
+                            <br>
+                            the American name for Wally.
+                        </p>
+                    </div>
+                </div>
+                <div class="cha_pic">
+                    <img class="cha" src="./media/Character/Odlaw_mini.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="aaa">
+                    <h2>Woof</h2>
+                    <hr>
+                    <div>
+                        <p class="details">Wally's dog,
+                            <br>
+                            first appeared in 《The Ultimate Fun Book》,
+                            <br>
+                            where he was identified as Wenda's dog.
+                            <br>
+                            Woof is much harder to find than Wally.
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cha_pic">
+                    <img class="cha" id="cha_woof" src="./media/Character/woof_mini.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="aaa">
+                    <h2>Wizard Whitebeard</h2>
+                    <hr>
+                    <p class="details">first seen in 《The Fantastic Journey》.
+                        <br>
+                        His signature is his exceptionally long beard,
+                        <br>
+                        which is often the key to finding him.
+                        <br>
+                        In his first appearance,
+                        <br>
+                        he was responsible for sending Wally on a quest to discover the truth about
+                        himself,
+                        <br>
+                        and he has tagged along on Wally's travels ever since.
+                    </p>
+                </div>
+                <div class="cha_pic">
+                    <img class="cha" id="cha_wiz" src="./media/Character/WizardWhitebeard.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="aaa">
+                    <h2>The Wally Watchers</h2>
+                    <hr>
+                    <p class="details">Wally's devoted fan-club that first appeared in 《Where's Wally? The Ultimate Fun
+                        Book》.
+                        <br>
+                        They turn up wherever Wally goes, dressed in the same red-and-white striped outfit.
+                        <br>
+                        25 appear in most books, though there are 99 of them in 《The Ultimate Fun Book》.
+                    </p>
+                </div>
+                <div class="cha_pic">
+                    <img class="cha" id="cha_all" src="./media/Character/All_mini.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card tabcontent" id="Anecdote">
+        <div class="container black">
+            <div class="a2">
+                <h1><b>Anecdote</b></h1>
+                <br><br><img class="News" src="./media/News.jpg" alt="">
+                <p class="details">In 1987's England,there's a serial killer，and he specially like to kill child 。
+                    <br>
+                    He has killed 25 children ,his modus operandi very cruel and he also good at hiding.
+                    <br>
+                    It took the police a long time to catch the suspect, but the murder was diagnosed as a psycho.
+                    <br>
+                    Therefore, he's placed in a mental hospital.
+                    <br>
+                    Unfortunately, the murderer escape from the hospital after several years and was wanted again.
+                    <br>
+                    But he disappeared without a trace,no one found him any after.
+                    <br>
+                    After the murderer escape, "Where is Willie?" is published,sooner.
+                    <br>
+                    It is said that the red and white striped clothes worn by Wally are the patient clothes he wore in
+                    the mental hospital.
+                    <br>
+                    Hats, glasses and crutches are his transvesting tools;
+                    <br>
+                    Full of daily necessities and equipment is a necessity for his escape.
+                    <br>
+                    In order to hide Wally, there are Wally's Watchers in the picture book that specifically covers him.
+                    <br>
+                    The number of main Watchers is exactly the same as the number of children killed by Willie, both of
+                    are 25 people.
+                    <br>
+                    Although the claim that Wally is a murderer is to be discussed to confirm,
+
+                    <br>
+                    the meaning of this picture book is intended to remind parents and children to be on the lookout for
+                    people around,
+                    <br>
+                    because criminals may be around.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function opentab(evt, tabName) {
+            if (tabName == "Anecdote") {
+                $("#Anecdote").css({
+                    "background-color": "black",
+                    "color": "red"
+                });
+                $("#Anecdote P").css("color", "white");
+            }
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("nav");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        };
+    </script>
+</body>
+
+</html>

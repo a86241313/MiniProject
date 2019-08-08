@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./CssScript/index.css">
+    <link rel="icon" href="./media/icon.jpg" type="image/x-icon" />
+    <!-- for icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- 標題 font-family: 'Archivo Black', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <!-- 英文內文 font-family: 'Red Hat Display', sans-serif;  -->
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:700&display=swap" rel="stylesheet">
+    <!-- 中文內文 font-family: 'M PLUS Rounded 1c', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <!-- for JQ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>威利在哪裡？</title>
+</head>
+
+<body>
+    <span id="where">WHERE'S</span>
+    <span id="wally">WALLY?</span>
+    <div id="navbar">
+        <span class="red home dropup">
+            <a href="./Home.html">
+                <button class="red nav" id="home"><i class="material-icons"> home </i></button>
+                <div class="content">
+                    <img class="jump" src="./media/Character/Wally.png" alt="">
+                </div>
+            </a>
+        </span>
+        <span class="list white dropup">
+            <button class="white nav" onclick="opentab(event, 'Introduction')">簡介</button>
+            <div class="content">
+                <img class="jump" src="./media/Character/Wilma.png" alt="">
+            </div>
+        </span>
+        <span class="list red dropup">
+            <button class="red nav" onclick="opentab(event, 'Character')">角色</button>
+            <div class="content">
+                <img class="jump" src="./media/Character/WizardWhitebeard.png" alt="">
+            </div>
+        </span>
+        <span class="list white dropup anecdote" onclick="opentab(event, 'Anecdote')">
+            <button class="white nav">威利軼聞</button>
+            <div class="content">
+                <img class="jump" src="./media/Character/Odlaw.png" alt="">
+            </div>
+        </span>
+        <span class="list red dropup">
+            <a href="./game.html">
+                <button class="red nav" id="game">試玩</button>
+                <d class="content">
+                    <img class="woof" src="./media/Character/woof.png" alt="">
+            </a>
+
+        </span>
+    </div>
+
+    <!-- ========================================== -->
+    <div class="card tabcontent" id="Introduction">
+        <div></div>
+        <div class="container">
+            <h1><b>《威利在哪裡？》</b></h1>
+            <p class="details">《Where's Wally》
+                <br>
+                是一套由英國插畫家Martin Handford所創作的一系列複雜的全頁繪圖冊。
+                <br>
+                圖中有上百個人在做各種不同的事情。
+                <br>
+                本書的目標就是在一張人山人海的圖片中找出威利，
+                <br>
+                並且幫助他尋找他的朋友以及弄丟的東西。
+            </p>
+            <hr>
+            <p class="details"> Martin Handford在1987年出版了最初的英國版本，並將角色取名為"Wally"。
+                <br>
+                《Where's Wally》的商標在28個國家都已經進行了註冊，
+                <br>
+                為了便於進行語言翻譯，每一國家都會授予威利一個新名字和個性描述。
+                <br>
+                在法國，他的名字變成了"Charlie" ;
+                <br>
+                德國是"Walter" ; 丹麥是"Holger" ;
+                <br>
+                斯里蘭卡是"Hetti" ; 挪威是"Willy" 。
+                <br>
+                在以色列，威利的名字則變成了"Effy" 。
+                <br>
+                而其中最成功的版本是北美的《Where's Waldo?》，
+                <br>
+                這個版本甚至超越了原有的「Wally」品牌。
+            </p>
+            <hr>
+            <p class="details">
+                由於早期的美版都是與英版同步發行，
+                <br>
+                而美國版本除了進行改編，還增加了Waldo的授權，包括了視頻遊戲、周邊書刊、雜誌、玩偶、玩具以及電視劇。
+                <br>
+                導致「Wally」的品牌被「Waldo」的巨大成功而淹沒。
+                <br>
+                「Waldo」的產品後來甚至被重新製作並翻譯到其它國家市場，
+                <br>
+                其中也不乏有將「Waldo」創作的產品改為「Wally」的版本。
+                <br>
+                雖然「Wally」是第一個被使用的名稱，
+                <br>
+                但作者和他的出版商在公開場合中都將角色和授權稱為「Waldo」。
+            </p>
+        </div>
+
+    </div>
+
+    <div class="card tabcontent" id="Character">
+        <div class="container" style="display:inline-block">
+            <h1><b>角色介紹</b></h1>
+            <br>
+            <br>
+            <div>
+                <div class="aaa">
+                    <h2>威利(Wally)</h2>
+                    <hr>
+                    <div>
+                        <p class="details">本書的主角。
+                            <br>
+                            其名字以及角色特性針對某些國際版本進行了在地化。
+                            <br>
+                            在前兩本書中，Wally獨自徘徊，是每個插圖中唯一可以找到的人。
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cha_pic">
+                    <img class="cha" src="./media/Character/Wally_mini.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="aaa">
+                    <h2>溫達（Wenda）</h2>
+                    <hr>
+                    <div>
+                        <p class="details">威利的朋友。
+                            <br>
+                            在《Where's Waldo: The Magnificent Poster Book》中首次出場。
+                            <br>
+                            她有一個雙胞胎姐妹葳瑪（Wilma），但未出現在後面出版的書籍中。
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cha_pic">
+                    <img class="cha" src="./media/Character/Wilma_mini.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="aaa">
+                    <h2>奧德（Odlaw）</h2>
+                    <hr>
+                    <div>
+                        <p class="details">威利的主要敵人。
+                            <br>
+                            首次出現在《Where's Waldo: The Magnificent Poster Book》。
+                            <br>
+                            他的名字是威利的美國名字"Waldo"逆序拼寫的結果。
+                            <br>
+                            他的外觀和威利幾乎是一樣的，但衣服是黃黑條紋是的而不是紅白相間，眼鏡為淺藍色且有八字鬍。
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cha_pic">
+                    <img class="cha" src="./media/Character/Odlaw_mini.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="aaa">
+                    <h2>沃夫（Woof）</h2>
+                    <hr>
+                    <div>
+                        <p class="details">威利的狗。
+                            <br>
+                            首次出現在《The Ultimate Fun Book》。
+                            <br>
+                            在這裡它是Wilma的狗。
+                            <br>
+                            讀者只能在《Where's Waldo: The Wonder Book》看到完整的Woof。
+                            <br>
+                            被譽為比威利更難找的人物。
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cha_pic">
+                    <img class="cha" id="cha_woof" src="./media/Character/woof_mini.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="aaa">
+                    <h2>白鬍子巫師（Wizard Whitebeard）</h2>
+                    <hr>
+                    <p class="details">首次出現在《The Fantastic Journey》。
+                        <br>
+                        在第一次出現時，他接受了威利關於尋找身世真相的請求，
+                        <br>
+                        從此便出現在威利的旅途之中。
+                        <br>
+                    </p>
+                </div>
+                <div class="cha_pic">
+                    <img class="cha" id="cha_wiz" src="./media/Character/WizardWhitebeard.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="aaa">
+                    <h2>威利的護衛者（The Waldo Watchers）</h2>
+                    <hr>
+                    <p class="details">他們的人數有很多，並且穿著打扮與威利十分相似。
+                        <br>
+                        其中的25個經常伴隨威利出現。
+                        <br>
+                        他們首次出現在《The Ultimate Fun Book》。
+                    </p>
+                </div>
+                <div class="cha_pic">
+                    <img class="cha" id="cha_all" src="./media/Character/All_mini.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card tabcontent" id="Anecdote">
+        <div class="container black">
+            <div class="a2">
+                <h1><b>威利軼聞</b></h1>
+                <br><br><img class="News" src="./media/News.jpg" alt="">
+                <p class="details">傳說在1987年以前，英國有一名連續殺人魔，專挑小孩下手。
+                    <br>
+                    他連續殺害了25個小孩，犯案手法相當殘忍，且很會躲藏。
+                    <br>
+                    警方花了很久的時間才逮到嫌犯，但這名殺人魔被診斷為精神異常，
+                    <br>
+                    因而關進精神病院中。
+                    <br>
+                    不料，殺人魔數年後從醫院裡逃跑，再度被通緝，
+                    <br>
+                    卻從此消失無蹤，沒有人抓到他。
+                    <br>
+                    這名殺人魔脫逃不久後，《威利在哪裡？》的繪本就上市了。
+                    <br>
+                    據傳威利穿的紅白條紋衣服，就是他在精神病院時所穿的病人服。
+                    <br>
+                    而帽子、眼鏡和枴杖等，是他的變裝工具 ;
+                    <br>
+                    滿身的生活用品和裝備，則是他逃亡的必需品。
+                    <br>
+                    為了掩藏威利，繪本中有專門掩護他的護衛隊。
+                    <br>
+                    而這護衛隊的人數剛好和威利所殺的兒童數目一樣，皆是25人。
+                    <br>
+                    雖然威利是殺人魔的說法有待商榷，
+                    <br>
+                    這本繪本的意義，許是要用來提醒家長和孩子，
+                    <br>
+                    要隨時提防身邊的人，因為罪犯可能就在周遭。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function opentab(evt, tabName) {
+            if (tabName == "Anecdote") {
+                $("#Anecdote").css({
+                    "background-color": "black",
+                    "color": "red"
+                });
+                $("#Anecdote P").css("color", "white");
+            }
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("nav");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        };
+    </script>
+</body>
+
+</html>

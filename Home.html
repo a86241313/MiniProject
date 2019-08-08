@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Wally's World</title>
+    <link rel="stylesheet" href="./CssScript/Home.css">
+    <!-- for icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- 標題 font-family: 'Archivo Black', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <!-- 英文內文 font-family: 'Red Hat Display', sans-serif;  -->
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./media/icon.jpg" type="image/x-icon" />
+    <!-- 中文內文 font-family: 'M PLUS Rounded 1c', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <!-- for JQ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="bgImg">
+        <div id="op">
+            <div class="title">
+                <p id="where">WHERE'S</p>
+                <p id="wally">WALLY?</p>
+            </div>
+            <div class="language">
+                <div class="en">
+                    <i class="material-icons left">keyboard_arrow_left</i>
+                    <span>&emsp;&emsp;English&emsp;&emsp;&emsp;&emsp;</span>
+                </div>
+                <i class="material-icons global" :hover="">language</i>
+                <div class="zh">
+                    <span>&emsp;&emsp;&emsp;&emsp;繁體中文&emsp;&emsp;</span>
+                    <i class="material-icons right">keyboard_arrow_right</i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- <audio src="./media/01.mp3" autoplay loop>
+    </audio> -->
+    <iframe src="./media/01.mp3" allow="autoplay" hidden></iframe>
+</body>
+<script>
+    $(".en").click(function () {
+        window.location.href = "index_en.html";
+    })
+    $(".zh").click(function () {
+        window.location.href = "index_zh.html";
+    })
+    $("html").load(function () {
+        Audio
+    })
+</script>
+
+</html>
